@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*----------Geral---------------*/
+* {
+    box-sizing: border-box;
+    color: #B6BEE3;
+}
+
+
+html,body {
+    margin: 0;
+    font-family: 'Public-Sans', sans-serif;
+    padding: 0;
+    background-color: #2F3349;
+    width: 100%;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 0 1.5em;
+}
+
+
+/*----------ScrollBar---------*/
+body{
+    height: auto;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #25293C;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #7367F0;
+    border-radius: 0.375rem;
+}
+
+
+/*----------------Topo--------------*/
+.header {
+    background-color: #2F3349;;
+    margin: 30px 40px;
+    position: absolute;
+    width: 94%;
+    color:#685DD8;
+    border-radius: 0.375rem;
+    z-index: 999;
+}
+
+.nav-topo {
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav a:hover {
+    background-color: #685DD8; 
+}
+
+.nav-topo li {
+    padding: 0 1.2%;
+}
+
+.agendar{
+    background-color: #685DD8;
+}
+
+.logo-topo {
+    margin: 0;
+    padding: 15px 15px 13px 30px;
+    float: left;
+}
+
+
+/*-----------------Banner----------------------*/
+.banner {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.banner .banner-texto {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-banner {
+    color: #0D0106;
+    font-size: 4em;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.desc-banner {
+    color: #0D0106;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+
+/*----------Quartos-------------*/
+.titulo-secao {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.container-quartos-destaque {
+    margin-top: 5px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.quartos-destaque-img {
+    width: 340px;
+    height: 340px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    object-fit:cover;
+}
+
+.quartos-destaque-texto {
+    font-size: 1.0em;
+    background-color: #685DD8;
+    padding: 8px 6px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.container-quartos-normais {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.quartos-normais-img {
+    width: 260px;
+    height: 260px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    object-fit: cover;
+}
+
+.figure-quartos {
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------Serviços-----------*/
+.container-servicos {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.service-img {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.service-texto {
+    color: #122620;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.service-button {
+    font-size: 1.0em;
+    padding: 12px;
+    color: #122620;
+    background-color: #7367f0;
+    border-radius: 0.375rem;
+    border: 0px;
+}
+
+.service-texto button:hover {
+    background-color: #b497f3;
+    cursor: pointer;
+}
+
+.sb-link {
+    text-decoration: none;
+}
+
+
+/*------------Reserva------------*/
+.container-reserva {
+    width: 100%;
+    margin-bottom: 160px;
+    font-size: 1.0em;
+}
+
+.container-reserva p {
+    padding: 20px 0px;
+}
+
+.form-input {
+    float: left;
+    padding: 0 12px 0 0;
+}
+
+.input-reserva {
+    padding: 8px 8px;
+    font-size: 1.0em;
+    display: block;
+    border: 1px solid rgb(151, 147, 147);
+}
+
+.reserva-button {
+    font-size: 1.0em;
+    padding: 8px 8px;
+    color: #F4EBD0;
+    background-color: #0D0106;
+    border: 0px;
+    display: block;
+}
+
+.container-reserva button:hover {
+    background-color: #122620;
+    cursor: pointer;
+}
+
+.reserva-img {
+    padding-right: 6px;
+}
+
+
+/*-----------Contato-----------*/
+.container-contato {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.contato-info {
+    font-size: 1.0em;
+}
+
+.icones-contato {
+    padding-right: 10px;
+    padding-left: 2px;
+}
+
+.fieldset {
+    border-radius: 1%;
+}
+
+.input {
+    font-size: 1.0em;
+    display: block;
+    width: 100%;
+    padding: 16px 8px;
+    border: 1px solid rgb(151, 147, 147);
+}
+
+.contato-button {
+    font-size: 1.0em;
+    padding: 12px;
+    color: #F4EBD0;
+    background-color: #7367f0;
+    border: 0px;
+}
+
+.fieldset button:hover {
+    background-color: #b497f3;
+    cursor: pointer;
+}
+
+
+/*-------------Footer---------------*/
+.footer {
+    margin-top: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #122620;
+    display: block;
+    background-color:#7367f0;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.div-icones {
+    display: block;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.icones {
+    display: inline-block;
+}
+
+.div-icones a {
+    padding-top: 22px;
+}
+
+.div-icones a:hover {
+    background-color:#7367f0; 
+}
